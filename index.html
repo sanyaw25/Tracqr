@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="dist/bundle.js"></script>
+  <title>Metro Booking</title>
+  <style>
+    body {
+      background-image: url('https://i.pinimg.com/564x/91/4a/f8/914af84f0a5fc5365793939a02580bb5.jpg'); 
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="tracqr-title"><a href="tracqr-home.html"> TRACQR</a></div>
+    <div class="nav-buttons">
+      <a href="map.pdf" class="header-btn light-blue-btn">Map</a>
+      <a href="aboutus.html" class="header-btn light-blue-btn">About Us</a>
+      <a href="faqs.html" class="header-btn light-blue-btn">FAQs</a>
+      <a href="/templates/index.html" class="header-btn light-blue-btn">QR code Generator</a>
+      <a href="qrcode.html" class="header-btn light-blue-btn">Get QR</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="underline">Metro Booking</h1>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="fromStation">From Station:</label>
+        <select id="fromStation" name="fromStation" required>
+          <option value="depot">Depot</option>
+          <option value="parichowk">Parichowk</option>
+          <option value="sector147">Sector 147</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="toStation">To Station:</label>
+        <select id="toStation" name="toStation" required>
+          <option value="sector76">Sector 76</option>
+          <option value="sector51">Sector 51</option>
+          <option value="sector18">Sector 18</option>
+        </select>
+      </div>
+
+      <div class="button-container">
+        <button type="submit" class="black-btn light-blue-btn">Confirm Route</button>
+      </div>
+    </form>
+
+    <div class="counter-fare-container">
+      <div class="counter-container">
+        <h2>No. of Tickets</h2>
+        <button id="minusBtn" class="black-btn small-square-btn light-blue-btn">-</button>
+        <span id="counter">0</span>
+        <button id="plusBtn" class="black-btn small-square-btn light-blue-btn">+</button>
+      </div>
+
+      <div class="fare-container">
+        <h2>Calculated Fare</h2>
+        <div id="ticketPriceBox"></div>
+      </div>
+
+      <div class="button-container">
+        <button type="submit"  id="connectButton" class="black-btn light-blue-btn">connect wallet</button>
+      </div>
+      
+      <div id="walletID"> Your wallet is not connected yet.</div>
+
+      <div class="button-container">
+        <button id="sendMoneyBtn" class="black-btn light-blue-btn">Send Money</button>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button id="resetBtn" class="black-btn light-blue-btn">Reset</button>
+      <button id="calculateFareBtn" class="black-btn light-blue-btn">Calculate Fare</button>
+    </div>
+  </div>
+
+  <div class="notification-container" id="notificationContainer">Alerts and Notifications</div>
+
+  <div class="networkInfo">
+    <h2> <b>Network Information</b></h2>
+    <p>Total Network Length: 393 km</p>
+    <p>Total no. of Stations: 12</p>
+    <p>Total no. of lines: 288</p>
+    <br>
+    <br>
+    <object class="map" data="map.pdf" type="application/pdf">
+      <p> <a href="https://www.delhimetrorail.com/map">Map</a></p>
+    </object>
+
+ </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="connectwallet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

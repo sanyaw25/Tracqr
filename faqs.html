@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <style>
+        body {
+            background-image: url('https://image.freepik.com/free-vector/cartoon-empty-subway-station-vector-illustration_264840-68.jpg');
+            background-repeat: no-repeat;
+            background-size: 1300px;
+            
+            font-family:  Helvetica;
+            font-size: medium;
+            text-size-adjust: 40px;
+            margin: 20px;
+            padding: 0;
+            background-color: darkgray;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(174, 206, 239);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-decoration: underline;
+            color: #004080; /* Dark blue color */
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .answer.open {
+            max-height: 1000px;
+            transition: max-height 0.3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif">Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question">What is tracQR?</div>
+            <div class="answer">
+                <p>
+                   A website making your metro journeys more accessible by means of online payment and qr code generation as well as features including min. price vs min. interchange.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How does it calculate the fare?</div>
+            <div class="answer">
+                <p>
+                  The fare depends on the distance, the time, and the amount of stops.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What is the time limit of issuance of the ticket?</div>
+            <div class="answer">
+                <p>
+                 1. For mobile ticket:- One hour issuance before the journey
+                <p>
+                 2. For offline ticket:- One hour before issuance before the journey
+                 </p>
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Can I extend my journey beyond the original destination stop?</div>
+            <div class="answer">
+                <p>
+                  Yes, the fare would be deducted when your ticket is scanned at the metro station you scan it on.
+                </p>
+            </div>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Box with Image</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("https://t4.ftcdn.net/jpg/03/23/03/35/360_F_323033547_KxnAz5lDWCWqkBicfH7glG9Kinv7WSsh.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .box {
+            text-align: center;
+            padding-top: 20px;
+            width: 370px;
+            height: 450px;
+            background-color: #F0FFF0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        #insertedImage {
+            max-width: 45%;
+            border: grey 0.1px solid;
+            height: auto;
+            margin-top: 32px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+      .scan-text {
+            color: #0f4578; /* Change the color to your desired color */
+            text-decoration: underline; /* Add underline */
+      }
+
+        .additional-content {
+            margin-top: 55px; /* Adjusted margin-top */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 class="scan-text">TracQR</h2>
+        <h3>Scan Qr Code for Metro</h3>
+        <img id="insertedImage" src="https://img.freepik.com/premium-vector/modern-square-sample-black-qr-code-icon-white-background_131186-1528.jpg" alt="Your image">
+        <p class="additional-content">Thank you and have a nice Journey ahead!</p>
+    </div>
+</body>
+</html>

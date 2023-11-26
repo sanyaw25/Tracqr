@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro App</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Added to make sure body covers the entire viewport height */
+            font-family: 'Arial', sans-serif;
+            background-color: #83b2e0; /* Background color for the page */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align content at the top */
+            min-height: 100vh; /* Adjusted minimum height */
+        }
+
+        body {
+            background-image: url('background1.jpg');
+            background-size: 100% 100%; /* Adjusted background size */
+            background-position: center;
+        }
+
+        .content-container {
+            margin: 20px; /* Adjusted margin */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px; /* Adjusted margin-bottom */
+            color: #333; /* Text color for the heading */
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px; /* Adjusted margin-bottom */
+            color: #555; /* Text color for the paragraph */
+        }
+
+        .get-started-btn {
+            margin-top: 10px; /* Adjusted margin-top */
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff; /* Text color for the button */
+            background-color: #000; /* Button background color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .get-started-btn:hover {
+            background-color: #333; /* Button background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>Welcome to the Metro App</h1>
+        <p>Booking your metro tickets online with the best searching preferences</p>
+    </div>
+    <a href="index.html" class="get-started-btn">Get Started</a>
+</body>
+</html>
+

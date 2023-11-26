@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.header {
+  background-color: #58a1e9;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracqr-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: #00008B;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-btn {
+  background-color: #5fc7e7;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.66);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.black-btn.light-blue-btn,
+.small-square-btn.light-blue-btn,
+#connectButton.light-blue-btn,
+#plusBtn.light-blue-btn,
+#minusBtn.light-blue-btn,
+#confirmBookingBtn.light-blue-btn {
+  background-color: #87CEFA;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #100202;
+  font-weight:  bold;
+
+}
+
+
+.buttons-container button {
+  margin-right: 10px;
+}
+
+
+.counter-container h2,
+.fare-container h2 {
+  text-decoration: underline;
+}
+
+
+h1.underline {
+  color: #00008B;
+}
+
+.counter-fare-container h2 {
+  color: #00008B; 
+}
+
+label {
+  font-weight: bold;
+}
+
+.button-container {
+  margin-top: 20px; 
+  display: flex;
+  gap: 10px;
+}
+
+.map{
+  width: 550px;
+  height:250px;
+}
+
+
+.networkInfo {
+  color: #1619b6;
+  background-color: rgba(248, 233, 233, 0.667);
+  padding: 20px; 
+  width: 532px;
+  height: 200px;
+  margin-left: 310px;
+  margin-top: 20px;
+  text-decoration: underline;
+  text-align: left;
+  font-size: large;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.notification-container {
+  position: fixed;
+  font-weight: bold;
+  top: 80px;
+  right: 20px;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
